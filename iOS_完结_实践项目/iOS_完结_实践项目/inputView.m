@@ -52,38 +52,33 @@
         make.height.equalTo(@88);
     }];
     
-    [self.nameText mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(weakSelf.mas_top).offset(15);
-        make.left.equalTo(weakSelf.mas_left).offset(15);
-        make.right.equalTo(weakSelf.mas_right).offset(-15);
+    [weakSelf.nameText mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(weakSelf.backLabel);
+        make.left.equalTo(weakSelf.backLabel.mas_left).offset(15);
+        make.right.equalTo(weakSelf.backLabel.mas_right).offset(-15);
         make.height.equalTo(@44);
     }];
-    
-    [self.lineLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(weakSelf.nameText.mas_top);
-        make.left.equalTo(weakSelf.mas_left).offset(15);
-        make.right.equalTo(weakSelf.mas_right).offset(-15);
+    [weakSelf.lineLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.equalTo(@1);
+        make.left.equalTo(weakSelf.backLabel.mas_left).offset(15);
+        make.right.equalTo(weakSelf.backLabel.mas_right).offset(-15);
+        make.top.equalTo(weakSelf.backLabel.mas_centerY);
     }];
-    
-    
-    [self.passText mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(weakSelf.lineLabel.mas_top);
-        make.left.equalTo(weakSelf.mas_left).offset(15);
-        make.right.equalTo(weakSelf.mas_right).offset(-15);
+    [weakSelf.passText mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(weakSelf.backLabel);
+        make.left.equalTo(weakSelf.backLabel).offset(15);
+        make.right.equalTo(weakSelf.backLabel).offset(-15);
         make.height.equalTo(@44);
     }];
-    
-    [self.landingBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(weakSelf.backLabel.mas_right).offset(15);
-        make.left.equalTo(weakSelf.mas_left).offset(16);
-        make.right.equalTo(weakSelf.mas_right).offset(-16);
-        make.height.equalTo(@35);
+    [weakSelf.landingBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(weakSelf.backLabel.mas_bottom).offset(15);
+        make.left.equalTo(weakSelf).offset(16);
+        make.right.equalTo(weakSelf).offset(-16);
+        make.height.equalTo(@30);
     }];
-    
-    [self.zhuceBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(weakSelf.landingBtn.mas_right).offset(17);
-        make.right.equalTo(weakSelf.mas_right).offset(-16);
+    [weakSelf.zhuceBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(weakSelf.landingBtn.mas_bottom).offset(15);
+        make.right.equalTo(weakSelf).offset(-15);
         make.size.sizeOffset = CGSizeMake(100, 40);
     }];
     

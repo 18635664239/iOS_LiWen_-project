@@ -33,6 +33,7 @@
 		A2BF540A1D12BEEA005B2403 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BF53FC1D12BEEA005B2403 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		A2BF540B1D12BEEA005B2403 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BF53FE1D12BEEA005B2403 /* View+MASAdditions.m */; };
 		A2BF540C1D12BEEA005B2403 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BF54011D12BEEA005B2403 /* ViewController+MASAdditions.m */; };
+		A2BF544E1D13D836005B2403 /* thirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BF544D1D13D836005B2403 /* thirdView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,8 @@
 		A2BF53FF1D12BEEA005B2403 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		A2BF54001D12BEEA005B2403 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		A2BF54011D12BEEA005B2403 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		A2BF544C1D13D836005B2403 /* thirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thirdView.h; sourceTree = "<group>"; };
+		A2BF544D1D13D836005B2403 /* thirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +268,8 @@
 			children = (
 				A2BF53E41D12BEB6005B2403 /* inputView.h */,
 				A2BF53E51D12BEB6005B2403 /* inputView.m */,
+				A2BF544C1D13D836005B2403 /* thirdView.h */,
+				A2BF544D1D13D836005B2403 /* thirdView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2BF540B1D12BEEA005B2403 /* View+MASAdditions.m in Sources */,
+				A2BF544E1D13D836005B2403 /* thirdView.m in Sources */,
 				A24C686D1D114FC100FA8AED /* AppDelegate.m in Sources */,
 				A24C68AF1D11525500FA8AED /* LWClassifyViewController.m in Sources */,
 				A24C68A71D11519700FA8AED /* LWShoppingViewController.m in Sources */,
